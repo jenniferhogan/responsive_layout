@@ -1,0 +1,298 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+p {
+  font-size: 1.25em;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: #7f7f7f;
+}
+
+h1,
+h2,
+h3 {
+  color: #4a4a4a;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.25em;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+a:hover {
+  color: #000;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation and intro ---- */
+
+
+.name,
+.main-nav li {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.main-nav li {
+  background: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 10px;
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.intro-img {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container,
+.main-header,
+.main-footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  padding-bottom: 40px;
+}
+
+.main-header {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 30px;
+  background-color: #fafafa
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.end {
+  border-top: 1px solid #e7e7e7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+
+/* ---- Portfolio ---- */
+
+.portfolio-two,
+.portfolio-three,
+.portfolio-four,
+.portfolio-five,
+.portfolio-six {
+  display: inline-block;
+}
+
+.port-img {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container p {
+  color: #4a4a4a;
+}
+
+/* ---- Footer ---- */
+
+.contact-info li,
+.contact-info a {
+    color: #7f7f7f;
+}
+
+.contact-info li {
+  text-align: center;
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+.contact-info a {
+   font-weight: bold;
+   padding-left: 15px;
+}
+.contact-info a:hover {
+  color: #000;
+}
+
+.end-name,
+.end-top {
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.end-top {
+  text-transform: uppercase;
+  float: right;
+}
+
+.end-name {
+  float: left;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.main-nav a {
+  background-color: #fafafa;
+}
+
+.intro {
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.intro p {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.intro-img {
+  float: right;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.end-top {
+  display: none;
+}
+
+.footer-nav {
+  display: initial;
+}
+
+.footer-nav li {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container p {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 125px;
+}
+
+/* ---- columns ---- */
+
+.portfolio-one,
+.portfolio-two,
+.portfolio-three,
+.portfolio-four,
+.portfolio-five,
+.portfolio-six {
+  float: left;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+.name {
+  float: left;
+}
+
+.main-nav li {
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+/* ---- columns ---- */
+
+.portfolio-one,
+.portfolio-two,
+.portfolio-three,
+.portfolio-four,
+.portfolio-five,
+.portfolio-six {
+  float: left;
+  padding-bottom: 30px;
+  width: 33.33%;
+}
+
+}
